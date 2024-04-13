@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KingKy" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Status Bar here. -->
+        <item name="android:statusBarColor">@color/red</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.KingKy" parent="Base.Theme.KingKy" />
+</resources>

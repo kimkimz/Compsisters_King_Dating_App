@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:elevation="1dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/paper_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paper_scroll_bg"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/wives_images"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:contentDescription="wives_images" />
+
+    <TextView
+        android:id="@+id/wives_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/wives_images"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/wives_ages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wives_names"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/wives_images"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        tools:text="Age: 100" />
+
+    <ImageButton
+        android:id="@+id/favouriteButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="41dp"
+        android:contentDescription="Add to favourite"
+        android:src="@drawable/favorite_border_24"
+        android:background="@null"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/favouriteButtonFilled"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="Add to favourite"
+        android:src="@drawable/favorite_filled_24"
+        android:background="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

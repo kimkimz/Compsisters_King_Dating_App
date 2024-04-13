@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Recent Search Icon -->
+    <ImageView
+        android:id="@+id/recentIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="recent search icon"
+        android:src="@drawable/recent_search_icon" />
+
+    <!-- White Background -->
+    <RelativeLayout
+        android:id="@+id/recentSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/recentIcon"
+        android:background="@drawable/search_bar_search_activity"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            tools:text="Name" />
+
+        <ImageButton
+            android:id="@+id/removeRecentSearchButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Delete recent search"
+            android:src="@drawable/cross_icon"
+            android:background="@null"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>
